@@ -1,0 +1,5 @@
+---
+# defaults file for create_file
+hosts: localhost
+file_path: '~/test_ansible.txt'
+file_content: 'Test passed'

@@ -1,0 +1,3 @@
+# Ansible
+**/.vscode/*
+**/inventory/prod.yaml
