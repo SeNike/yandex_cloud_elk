@@ -50,6 +50,10 @@
 
 **Шаг 17.** В ответ необходимо прислать ссылки на collection и tar.gz архив, а также скриншоты выполнения пунктов 4, 6, 15 и 16.
 
+[Collection](https://github.com/SeNike/yandex_cloud_elk.git)
+
+[tar.gz архив](https://github.com/SeNike/yandex_cloud_elk/blob/main/senike-yandex_cloud_elk-1.0.0.tar.gz)
+
 ## Необязательная часть
 
 1. Реализуйте свой модуль для создания хостов в Yandex Cloud.
