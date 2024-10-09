@@ -67,4 +67,3 @@
 6. В итоге ваша коллекция обязательно должна содержать: clickhouse-role (если есть своя), lighthouse-role, vector-role, два модуля: my_own_module и модуль управления Yandex Cloud хостами и playbook, который демонстрирует создание Observability стека.
 
 ![](https://github.com/SeNike/Study_24/blob/main/ansible-02/6.17.png)
-
