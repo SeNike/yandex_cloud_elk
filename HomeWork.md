@@ -52,7 +52,7 @@
 
 [Collection](https://github.com/SeNike/yandex_cloud_elk.git)
 
-[tar.gz архив](https://github.com/SeNike/yandex_cloud_elk/blob/main/senike-yandex_cloud_elk-1.0.0.tar.gz)
+[tar.gz архив](https://github.com/SeNike/yandex_cloud_elk/blob/main/senike-yandex_cloud_elk-1.1.0.tar.gz)
 
 ## Необязательная часть
 
@@ -61,5 +61,10 @@
 3. Модуль может формировать динамическое inventory, но эта часть не является обязательной, достаточно, чтобы он делал хосты с указанной спецификацией в YAML.
 4. Протестируйте модуль на идемпотентность, исполнимость. При успехе добавьте этот модуль в свою коллекцию.
 5. Измените playbook так, чтобы он умел создавать инфраструктуру под inventory, а после устанавливал весь ваш стек Observability на нужные хосты и настраивал его.
+
+[1.1.0](https://github.com/SeNike/yandex_cloud_elk/tree/1.1.0)
+
 6. В итоге ваша коллекция обязательно должна содержать: clickhouse-role (если есть своя), lighthouse-role, vector-role, два модуля: my_own_module и модуль управления Yandex Cloud хостами и playbook, который демонстрирует создание Observability стека.
+
+![](https://github.com/SeNike/Study_24/blob/main/ansible-02/6.17.png)
 
