@@ -1,8 +1,0 @@
----
-- name: Run create_file role
-  hosts: localhost
-  vars:
-    file_path: '~/test_ansible_new.txt'
-    file_content: 'Test passed'
-  roles:
-    - role: create_file

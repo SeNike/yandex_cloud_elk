@@ -1,0 +1,12 @@
+---
+# defaults file for create_file
+vm_subnet: "my-subnet"
+vm_network: "my-network"
+vm_name:  "my-vm2"
+vm_image_family: "centos-7-oslogin"
+vm_zone: "ru-central1-a"
+vm_cores: 2
+vm_memory: 4
+vm_disk_size: 20 
+vm_ssh_key_path: "~/.ssh/id_rsa.pub"
+host_name: "default"

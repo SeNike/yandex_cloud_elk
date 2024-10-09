@@ -1,0 +1,65 @@
+---
+- name: Run create_yc_vm role clickhouse
+  hosts: localhost
+  vars:
+    vm_subnet: "my-subnet"
+    vm_network: "my-network"
+    vm_name:  "clickhouse"
+    vm_image_family: "centos-7-oslogin"
+    vm_zone: "ru-central1-a"
+    vm_cores: 2
+    vm_memory: 4
+    vm_disk_size: 20 
+    vm_ssh_key_path: "~/.ssh/id_rsa.pub"
+    host_name: "clickhouse"
+  roles:
+    - role: create_yc_vm
+- name: Run create_yc_vm role vector
+  hosts: localhost
+  vars:
+    vm_subnet: "my-subnet"
+    vm_network: "my-network"
+    vm_name:  "vector"
+    vm_image_family: "centos-7-oslogin"
+    vm_zone: "ru-central1-a"
+    vm_cores: 2
+    vm_memory: 4
+    vm_disk_size: 20 
+    vm_ssh_key_path: "~/.ssh/id_rsa.pub"
+    host_name: "vector"
+  roles:
+    - role: create_yc_vm    
+- name: Run create_yc_vm role lighthouse
+  hosts: localhost
+  vars:
+    vm_subnet: "my-subnet"
+    vm_network: "my-network"
+    vm_name:  "lighthouse"
+    vm_image_family: "centos-7-oslogin"
+    vm_zone: "ru-central1-a"
+    vm_cores: 2
+    vm_memory: 4
+    vm_disk_size: 20 
+    vm_ssh_key_path: "~/.ssh/id_rsa.pub"
+    host_name: "lighthouse"
+  roles:
+    - role: create_yc_vm           
+
+- name: Install Clickhouse
+  hosts: clickhouse
+  roles:
+    - clickhouse
+
+- name: Install Vector
+  hosts: vector
+  roles:
+    - vector  
+ 
+- name: Install Nginx
+  hosts: lighthouse
+  roles:
+    - nginx  
+- name: Install Lighthouse
+  hosts: lighthouse
+  roles:
+    - lighthouse    

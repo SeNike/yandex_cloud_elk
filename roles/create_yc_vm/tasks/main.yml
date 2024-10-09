@@ -1,0 +1,14 @@
+---
+# tasks file for create_file
+- name: Call create_yc_vm
+  create_yc_vm:
+    vm_subnet: "{{ vm_subnet }}"
+    vm_network: "{{ vm_network }}"
+    vm_name:  "{{ vm_name }}"
+    vm_image_family: "{{ vm_image_family }}"
+    vm_zone: "{{ vm_zone }}"
+    vm_cores: "{{ vm_cores }}"
+    vm_memory: "{{ vm_memory }}"
+    vm_disk_size: "{{ vm_disk_size }}"
+    vm_ssh_key_path: "{{ vm_ssh_key_path }}"
+    host_name: "{{ host_name }}"
